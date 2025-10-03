@@ -26,7 +26,7 @@ export default function Home() {
           ) : (
             <>
               <h1 className="text-center text-white ">404. portfolio not found</h1>
-              <h2 className="text-center text-white ">(i'm working on it)</h2>
+              <h2 className="text-center text-white ">(i&aposm working on it)</h2>
             </>
           )}
         </Screen>

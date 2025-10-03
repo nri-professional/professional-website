@@ -1,7 +1,7 @@
 // Partial replace helper function
 export default function partialReplace(str: string, num: number, obfusCharacters: string, offset: number, opposite: boolean) {
     let strArr = str.split("");
-    let charsToUse = obfusCharacters.split("");
+    const charsToUse = obfusCharacters.split("");
     let mult = 1;
 
     if(opposite === true) {

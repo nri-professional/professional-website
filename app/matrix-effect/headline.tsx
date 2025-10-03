@@ -23,7 +23,7 @@ export default function Headline(props: headlineProps) {
 
     // Obfuscates text
     function obfuscate(content: HTMLHeadingElement) {
-        let textToObfuscate = content.textContent;
+        const textToObfuscate = content.textContent;
         let i = 1;
         const characters = textToObfuscate.length;
         const allowedRepetitionCount = 2;
@@ -77,7 +77,7 @@ export default function Headline(props: headlineProps) {
         overflow-hidden
         max-w-full
         ">
-            NICHOLAS RICKETTS' portfolio
+            NICHOLAS RICKETTS&apos portfolio
         </h1>
     );
 }
