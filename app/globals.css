@@ -1,24 +1,36 @@
 @import "tailwindcss";
 
 :root {
+  /* Basic theme colors */
   --background: #ffffff;
   --foreground: #171717;
+  /* Matrix colors */
+  --matrix-light-green: #00FF41;
+  --matrix-green: #008F11;
+  --matrix-dark-green: #003B00;
+  --matrix-black: #0d0208;
 }
 
 @theme inline {
+  /* Basic theme */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  /* Matrix theme */
+  --color-matrix-light-green: var(--matrix-light-green);
+  --color-matrix-green: var(--matrix-green);
+  --color-matrix-dark-green: var(--matrix-dark-green);
+  --color-matrix-black: var(--matrix-black);
 }
-
+/* Dark mode support, for later
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
-
+ */
 body {
   background: var(--background);
   color: var(--foreground);
