@@ -1,6 +1,6 @@
 'use client'
 
-import Screen from "./matrix-effect/screen";
+import Screen from "./general-components/screen";
 import { useState } from "react";
 import MatrixSplashScreen from "./matrix-effect/splash-screen";
 
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main> 
         {/* Makes a screen size box of a given color */}
-        <Screen color="black">
+        <Screen color="bg-black">
           {showSplash ? 
           (
             // Has no leaks, but is definitely not my proudest code ever.
@@ -26,7 +26,7 @@ export default function Home() {
           ) : (
             <>
               <h1 className="text-center text-white ">404. portfolio not found</h1>
-              <h2 className="text-center text-white ">(i&aposm working on it)</h2>
+              <h2 className="text-center text-white ">(i&apos;m working on it)</h2>
             </>
           )}
         </Screen>

@@ -7,7 +7,7 @@ interface screenProps  {
 
 export default function Screen(props: screenProps) {
     return (
-        <div className={`bg-${props.color} h-screen`}>
+        <div className={`${props.color} h-screen`}>
             {props.children}
         </div>
     );

@@ -77,7 +77,7 @@ export default function Headline(props: headlineProps) {
         overflow-hidden
         max-w-full
         ">
-            NICHOLAS RICKETTS&apos portfolio
+            NICHOLAS RICKETTS&apos; portfolio
         </h1>
     );
 }

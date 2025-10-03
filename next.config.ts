@@ -1,10 +1,11 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   // Enables static site export
   output: 'export',
-  basePath: '/professional-website',  // your repo name
-  assetPrefix: '/professional-website/', // ensures _next/static works
+  assetPrefix: isProd ? './' : '', 
 };
 
 export default nextConfig;
